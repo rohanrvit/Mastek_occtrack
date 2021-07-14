@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.5.1/knockout-latest.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout-validation/2.0.4/knockout.validation.min.js"></script>
+    
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="knockout-app" class="card">
+       <div class="card-section" data-bind="visible: !hasBeenSubmitted()">
+         
+           <form data-bind="submit: handleSubmit">
+              <div class="field">
+                 <label for="first-name">First Name*</label>
+                 <input data-bind="value: firstName, css: { error: firstName.error() && firstName.isModified() }" id="first-name" type="text" />
+              </div>
+              <div class="field">
+                <label for="first-name">Last Name*</label>
+                <input data-bind="value: lastName, css: { error: lastName.error() && lastName.isModified() }" id="last-name" type="text" />
+             </div>
+              <div class="field">
+                 <label for="email">Email Address*</label>
+                 <input data-bind="value: emailAddress, css: { error: emailAddress.error() && emailAddress.isModified() }" placeholder="you@mail.com" id="email" type="text" />
+              </div>
+              <div class="field">
+                 <label for="subscription">Gender*</label>
+                 MALE<input type="radio" id="gender" value="Male" data-bind = "checked: gender"/>
+                 FEMALE <input type="radio" id="gender" value="Female" data-bind = "checked: gender"/>
+             </div>
+             
+              <div class="field">
+                 <label for="courses">Courses</label>
+               JAVA<input type="checkbox" id="course" value="BCA" data-bind = "checked: course"/>
+
+               PYTHON<input type="checkbox" id="course" value="BSC" data-bind = "checked: course"/>
+
+               HTML<input type="checkbox" id="course" value="BCOM" data-bind = "checked: course"/>
+
+               SQL<input type="checkbox" id="course" value="BA" data-bind = "checked: course"/>
+              </div>
+              <input type="submit" value="Continue">
+           </form>
+        </div> </div >
+              
+        
+     </div>
+     <script src="js/script.js"></script>
+</body>
+</html>

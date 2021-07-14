@@ -1,0 +1,88 @@
+.carousel-container {
+    width: 800px;
+    height: 560px;
+    margin: 20px auto;
+    border: 1px solid #777;
+  }
+  
+  .carousel {
+    width: 800px;
+    height: 560px;
+    background: #ddd;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    width: inherit;
+    height: inherit;
+    float: left;
+    display: none;
+  }
+  
+  .carousel-item p {
+    color: #fff;
+    margin: 0;
+    line-height: 300px;
+    font-family: Calibri;
+    font-size: 50px;
+    text-align: center;
+  }
+  img{
+      margin-top: 50px;
+      width: 450px;
+      height: 450px;;
+  }
+  
+  #item1 {
+    background:black; /* BLUE */
+  }
+  
+  #item2 {
+    background:black; /* SEA GREEN */
+  }
+  
+  #item3 {
+    background: black; /* PURPLE */
+  }
+  
+  #item4 {
+    background:black; /* YELLOW */
+  }
+  
+  .carousel-controls {
+    width: inherit;
+    height: 35px;
+  }
+  
+  .carousel-container .carousel-controls > a {
+    color: #777;
+    margin: 5px;
+    padding: 5px;
+    font-family: Calibri;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.2s;
+  }
+  
+  
+  .carousel-container .carousel-controls > a:hover {
+    color: #222;
+  }
+  
+  .carousel-container .carousel-controls > a.left {
+    float: left;
+  }
+  
+  .carousel-container .carousel-controls > a.right {
+    float: right;
+  }
+  
+  .carousel-status {
+    margin: 0;
+    color: #444;
+    font-family: Calibri;
+    font-size: 12px;
+    text-align: center;
+  }

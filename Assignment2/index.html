@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<h1 id="demo"></h1>
+    <div class="container">
+        <h2 id="heading1">Student Registration Form</h2>
+        <form >
+            <div class="form-group required control-label">
+                <label for="fname">First Name:</label>
+                <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required="required"/>
+             </div>
+    <div class="form-group required control-label">
+                <label for="lname">Last Name:</label>
+                <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required="required"/>
+      </div>
+      <div class="form-group required control-label">
+                <label for="gender">Gender:</label>
+                <select class="form-control" id="gender" required="required" name="gender">
+                    <option>Select Your Gender</option>
+                    <option id="male" value="male">Male</option>
+                    <option id="female" value="female">Female</option>
+                </select>
+         </div>
+
+            <div class="form-group required control-label">
+                <label for="pwd">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email" required="required"/>
+                <div id="textExample1" class="form-text">
+                    Email must include @ and . and email must be atleast 12 characters
+                </div>
+    </div>
+   
+<div class="form-group required control-label" required="required">
+    <label>Courses:</label><br>
+    <input type="checkbox" name="courses" id="javascript" value="javascript" />
+<label for="javascript">JavaScript</label><br>
+
+ <input type="checkbox" name="courses" id="html" value="html" />
+ <label for="html">HTML</label><br>
+
+ <input type="checkbox" name="courses" id="css" value="css" />
+ <label for="css">CSS</label><br>
+</div>
+            <div class="checkbox">
+                <label><input type="checkbox" name="remember"> Remember me</label>
+            </div>
+            <button type="submit" class="btn btn-primary" >Submit</button>
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+        
+</body>
+
+</html>
